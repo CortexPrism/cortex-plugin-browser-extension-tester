@@ -1,0 +1,26 @@
+{
+  "name": "cortex-plugin-browser-extension-tester",
+  "version": "1.0.0",
+  "description": "Browser Extension Tester — Test Chrome/Firefox/Edge extensions: manifest validation, content scripts, CSP checks",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-browser-extension-tester",
+  "homepage": "https://cortexprism.io/marketplace/plugins/browser-extension-tester",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "ext_validate_manifest", "description": "Validate extension manifest", "params": [] },
+    {
+      "name": "ext_test_scripts",
+      "description": "Test content and background scripts",
+      "params": []
+    },
+    { "name": "ext_check_csp", "description": "Check for CSP violations", "params": [] },
+    { "name": "ext_simulate", "description": "Simulate user interactions", "params": [] }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
